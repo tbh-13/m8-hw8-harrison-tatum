@@ -123,7 +123,7 @@ main > article img {
   margin-bottom: 6px;
 }
 
-@media screen and (max-width: 750px) {
+@media only screen and (max-width: 480px) {
   header {
     display: flex;
     flex-direction: column;
@@ -138,27 +138,35 @@ main > article img {
 
   section > button {
     border-radius: 10px;
-    font-size: 10px;
+    font-size: 1rem;
   }
 
   section.hero > .call-to-action {
     max-width: 350px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 0 12px;
   }
 
-  main > article {
-    max-width: 500px;
+  main article {
     font-size: 1rem;
+    padding: 25px 25px;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
   }
 
   article > img {
     float: none;
     display: block;
-    padding: 20px 0;
-    margin: 0 auto;
-    width: 80%;
-    align-items: center;
+    min-width: 100%;
+    padding: 24px 0;
+    justify-content: center;
   }
 }
 
